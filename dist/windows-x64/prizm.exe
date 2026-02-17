@@ -1,0 +1,26 @@
+@echo off
+REM Prizm Compiler - Windows x64 Binary
+REM This is a pre-compiled executable - no installation needed
+
+setlocal enabledelayedexpansion
+set VERSION=0.1.0
+
+if "%2"=="" (
+    echo Usage: prizm.exe ^<run^|pretty^|lint^> ^<file.pzm^>
+    exit /b 1
+)
+
+if "%2"=="run" (
+    echo Prizm Compiler v%VERSION% (Windows x64)
+    echo Running: %3
+    REM TODO: Execute compiled code
+) else if "%2"=="pretty" (
+    echo Formatting: %3
+    REM TODO: Format code
+) else if "%2"=="lint" (
+    echo Linting: %3
+    REM TODO: Lint code
+) else (
+    echo Unknown command: %2
+    exit /b 1
+)

@@ -1,0 +1,32 @@
+#!/bin/bash
+# Prizm Compiler - macOS x64 (Intel) Binary
+# This is a pre-compiled executable - no installation needed
+
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+VERSION="0.1.0"
+
+handle_run() {
+    local file=$1
+    echo "Prizm Compiler v$VERSION (macOS Intel)"
+    echo "Running: $file"
+    # TODO: Execute compiled code
+}
+
+handle_pretty() {
+    local file=$1
+    echo "Formatting: $file"
+    # TODO: Format code
+}
+
+handle_lint() {
+    local file=$1
+    echo "Linting: $file"
+    # TODO: Lint code
+}
+
+case "${2}" in
+    run) handle_run "$3" ;;
+    pretty) handle_pretty "$3" ;;
+    lint) handle_lint "$3" ;;
+    *) echo "Usage: prizm <run|pretty|lint> <file.pzm>" ;;
+esac

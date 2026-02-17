@@ -1,0 +1,84 @@
+// Prizm Language Comprehensive Example
+
+// ===== BASIC OUTPUT (Built-in) =====
+output("Welcome to Prizm Language!"),
+
+// ===== VARIABLE DECLARATIONS WITH TYPES =====
+var name: string = "Prizm",
+var age: int = 5,
+var height: float = 1.75,
+var isActive: boolean = true,
+var skills: array = ["coding", "design", "optimization"],
+
+// ===== MATH OPERATIONS HEADER =====
+var sum: int = math.add(10, 20),
+var random_num: int = math.random(1-100),
+var power_result: int = math.power(2, 8),
+
+// ===== FILE OPERATIONS HEADER =====
+file.create("config.json"),
+file.write("config.json", "{}"),
+var config_content = file.read("config.json"),
+
+// ===== DATA/JSON HEADER (Custom JSON Format) =====
+var config: object = {
+    appName: "PrizmApp",
+    version: "1.0.0",
+    features: ["ui", "data", "root"],
+    debug: true,
+},
+var json_string = data.stringify(config),
+var parsed_config = data.parse(json_string),
+
+// ===== CONTROL FLOW =====
+if (age > 3) {
+    output("Prizm is mature enough!"),
+} else {
+    output("Prizm is still developing"),
+},
+
+// ===== LOOP UNTIL =====
+var counter: int = 0,
+loop until (counter > 3) {
+    output("Counter: "),
+    output(counter),
+    counter = counter + 1,
+},
+
+// ===== REPEAT FOR LOOP =====
+repeat for (i = 1 to 5) {
+    output("Iteration: "),
+    output(i),
+},
+
+// ===== FUNCTION DEFINITION =====
+define greet(person: string) {
+    output("Hello, "),
+    output(person),
+    return "Greeting sent",
+},
+
+// ===== FUNCTION CALL =====
+var result = greet("World"),
+
+// ===== UI HEADER (Creates a simple window) =====
+ui.window("Prizm App", 800, 600),
+ui.button("Click Me", 100, 100, 200, 50),
+ui.text("This is a Prizm UI Window", 100, 200),
+ui.input("Enter name...", 100, 300, 300, 40),
+ui.render(),
+
+// ===== ROOT HEADER (Advanced/Powerful Operations) =====
+// root.exec("echo 'Power mode active'"),
+// root.optimize(my_function),
+
+// ===== TIME OPERATIONS HEADER =====
+var current_time = time.now(),
+var timestamp = time.timestamp(),
+output("Current timestamp: "),
+output(timestamp),
+
+// Sleep for 1 second (1000ms)
+// time.sleep(1000),
+
+output("Time operations example completed!"),

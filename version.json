@@ -1,0 +1,39 @@
+{
+  "version": "0.1.0",
+  "releaseDate": "2024-01-15",
+  "downloadUrl": "https://github.com/Seigh-sword/Prizm/releases/download/v0.1.0/prizm",
+  "changelog": [
+    {
+      "version": "0.1.0",
+      "date": "2024-01-15",
+      "changes": [
+        "Initial release",
+        "10 core headers: file, math, control, var, function, http, ui, root, data, time",
+        "Complete type system: int, float, string, boolean, array, object, null, any",
+        "Cross-platform support: Linux x64, macOS x64, macOS ARM64, Windows x64",
+        "CLI commands: run, pretty, lint",
+        "Pre-compiled binaries with zero external dependencies"
+      ]
+    }
+  ],
+  "platforms": {
+    "linux-x64": {
+      "url": "https://github.com/Seigh-sword/Prizm/releases/download/v0.1.0/prizm-linux-x64",
+      "sha256": "placeholder_hash_linux"
+    },
+    "macos-x64": {
+      "url": "https://github.com/Seigh-sword/Prizm/releases/download/v0.1.0/prizm-macos-x64",
+      "sha256": "placeholder_hash_macos_intel"
+    },
+    "macos-arm64": {
+      "url": "https://github.com/Seigh-sword/Prizm/releases/download/v0.1.0/prizm-macos-arm64",
+      "sha256": "placeholder_hash_macos_arm"
+    },
+    "windows-x64": {
+      "url": "https://github.com/Seigh-sword/Prizm/releases/download/v0.1.0/prizm-windows-x64.exe",
+      "sha256": "placeholder_hash_windows"
+    }
+  },
+  "minSupportedVersion": "0.1.0",
+  "securityPatch": false
+}
